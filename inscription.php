@@ -1,5 +1,6 @@
 <?php
 require_once 'co.php';
+require_once 'inc/header.php';
 
 if(isset($_POST['forminscription'])) {
    $pseudo = htmlspecialchars($_POST['pseudo']);
@@ -67,13 +68,18 @@ if(isset($_POST['forminscription'])) {
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/inscription.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--END FAVICON-->
 
 
 </head>
 
 <body>
-   <div align="center">
+<?php require_once 'inc/header.php'; ?>
+   <div align="center" class="inc">
      <h2>Inscription</h2>
        <br /><br />
     <form  method="POST" action="">
@@ -83,7 +89,7 @@ if(isset($_POST['forminscription'])) {
               <label for="pseudo">Pseudo :</label>
             </td>
             <td>
-              <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>" />
+              <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="<?php if(isset($user)) { echo $user; } ?>" />
             </td>
          </tr>
          <tr>

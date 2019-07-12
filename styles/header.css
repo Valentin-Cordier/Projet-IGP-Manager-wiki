@@ -34,7 +34,7 @@ nav {
   height: 5em;
   line-height: 3em;
   border: none;
-  background-color: dimgray !important;
+  background-color: black !important;
 }
 
 /*positionnement des liens ainsi que la transition lorsque la souris passe dessus*/
@@ -54,7 +54,7 @@ nav ul li, .dropbtn .dropbtn2 {
 }
 
 a:hover {
-  color: dimgray;
+  color: black;
 }
 
 /*changement de couleur de fond au passage de la souris sur les liens*/
@@ -75,7 +75,7 @@ li.dropdown2 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: dimgray;
+  background-color: black;
   margin-top: 5em;
   /*min-width: 15em;*/
   box-shadow: 0em 0.5em 1em 0em dimgray;
@@ -86,7 +86,7 @@ li.dropdown2 {
 .dropdown-content2 {
   display: none;
   position: absolute;
-  background-color: dimgray;
+  background-color: black;
   margin-top: 5em;
   /*min-width: 15em;*/
   box-shadow: 0em 0.5em 1em 0em dimgray;
@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: dimgray !important;
+  color: black !important;
 }
 
 /*Responsivité bar nav*/
@@ -162,7 +162,7 @@ nav ul li a:hover {
 }
 
 .fa-sign-in-alt:hover {
-  color: dimgray;
+  color: black;
 }
 
 .fa-sign-out-alt {
